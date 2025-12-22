@@ -1,0 +1,35 @@
+<html lang="EN">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Sciszors</title>
+
+<body>
+    <script>
+        seed = Math.random()
+        let HumanC = prompt("Enter Choice");
+        function getComputerChoice(seed) {
+            if (seed < .3) { return "Rock"; }
+            else if (seed < .6) { return "Scissors"; }
+            else if (seed < 1) { return "Paper"; }
+
+            return;
+        }
+        let ComputerC = getComputerChoice(seed)
+        function playRound(HumanC, ComputerC) {
+            if (HumanC == ComputerC) { return "Draw" }
+            if (HumanC == "Rock" || ComputerC == "Paper") { return "You lose"; }
+            if (HumanC == "Rock" || ComputerC == "Scissors") { return "You win"; }
+            if (HumanC == "Paper" || ComputerC == "Rock") { return "You Win"; }
+            if (HumanC == "Paper" || ComputerC == "Scissors") { return "You lose"; }
+            if (HumanC == "Scissors" || ComputerC == "Paper") { return "You win"; }
+            if (HumanC == "Scissors" || ComputerC == "Rock") { return "You lose"; }
+        }
+
+        console.log("Human Choice:", HumanC, "\nComputer Choice:", ComputerC, "\n", playRound(HumanC, ComputerC))
+
+    </script>
+</body>
+</head>
+
+</html>
