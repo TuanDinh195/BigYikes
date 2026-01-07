@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 8px solid brown; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border: 8px solid brown; 
+    
+    
+}
+.links {
+    margin:8px;
+}
+
+.container-one {
+    display: flex;
+    justify-content: center;
+    border: 5px solid brown;
+}
+.container-one .left {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+.container-one .right {
+    display: flex;
+    width: 250px;
+    height:250px;
+}
+
+.container-two {
+    background: lightcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    
+}
+.image-boxes { 
+    display: flex;
+    border: 5px solid blue;
+  
+}
+.image-boxes .image { 
+    
+    display: flex;
+    flex-direction: column;
+    border: 5px solid brown;
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+}
+
+.container-three {
+    background: lightblue;
+    border: 5px solid brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.container-three .quote {
+    border: 5px solid brown;
+    width: 400px;
+   
+}
+.container-three .author {
+    margin: 20px;
+    width: 400px;
+    border: 5px solid blue;
+    text-align: right;
+}
